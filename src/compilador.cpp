@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-compilador::compilador(string& codigo) {
+compilador::compilador(const string& codigo) {
     codigoFuente = codigo;
 }
 void compilador::iniciar() {
@@ -31,7 +31,7 @@ void compilador::iniciar() {
                 puntero--;
                 break;
             case '.':
-                cout << vectorCodigo[puntero];cout << static_cast<char>(vectorCodigo[puntero] + '0');
+                cout << static_cast<char>(vectorCodigo[puntero]);
                 break;
             case ',':
                 char entrada;

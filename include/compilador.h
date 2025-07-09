@@ -12,7 +12,7 @@
 
 class compilador {
 public:
-    compilador(std::string& codigo);
+    compilador(const std::string& codigo);
 
     void iniciar();
     void mapearcodigoFuente();
@@ -21,7 +21,6 @@ private:
     std::unordered_map<int, int> tablaSimbolos;
     std::string codigoFuente;
     std::stack<int> pilaAbiertos;
-    std::stack<int> pilaCerrados;
 
 };
 
